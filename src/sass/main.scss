@@ -1,4 +1,11 @@
-body {
-    background-color: red;
-    color: white;
-}
+@import "base";
+@import "typography";
+
+@import "sidebar";
+@import "header";
+@import "realtors";
+@import "features";
+@import "story";
+@import "homes";
+@import "gallery";
+@import "footer";
