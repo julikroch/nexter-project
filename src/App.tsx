@@ -1,9 +1,10 @@
+import Sidebar from "./components/Sidebar";
+
 function App() {
   return (
-    <div className="test">
-      Hello world
+    <div className="container">
+      <Sidebar />
     </div>
   )
 }
-
 export default App;
