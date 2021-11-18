@@ -1,6 +1,6 @@
-
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { FaGlobe, FaTrophy, FaMapPin, FaKey, FaLock } from 'react-icons/fa';
+import { FaGlobe, FaTrophy, FaMapPin, FaKey, FaLock, FaChartLine } from 'react-icons/fa';
+
 interface FeaturesT {
     id: number
     icon: ReactElement
@@ -15,7 +15,7 @@ const Features: FunctionComponent = () => {
         { id: 2, icon: <FaTrophy className= 'feature__icon'/>, title: "Only the best properties", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." },
         { id: 3, icon: <FaMapPin className= 'feature__icon'/>, title: "All homes in top location", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." },
         { id: 4, icon: <FaKey className= 'feature__icon'/>, title: "New home in one week", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." },
-        { id: 5, icon: <FaGlobe className= 'feature__icon'/>, title: "Top 1% realtors", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." },
+        { id: 5, icon: <FaChartLine className= 'feature__icon'/>, title: "Top 1% realtors", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." },
         { id: 6, icon: <FaLock className= 'feature__icon'/>, title: "Secure payments on nexter", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia error, aliquid quibusdam commodi itaque et veniam quasi cupiditate repellendus." }
     ])
 
@@ -24,7 +24,7 @@ const Features: FunctionComponent = () => {
             {features.map((feature: FeaturesT) => (
                 <div className="feature" key={feature.id}>
                     {feature.icon}
-                    <h4 className="heading-4">{feature.title}</h4>
+                    <h4 className="heading-4 heading-4--dark">{feature.title}</h4>
                     <p className="feature__text">{feature.description}</p>
                 </div>
             ))}
